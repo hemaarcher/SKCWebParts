@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "skc-server-hw-frm-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/skcServerHwFrm/SkcServerHwFrmWebPart.js",
+          "manifest": "./src/webparts/skcServerHwFrm/SkcServerHwFrmWebPart.manifest.json"
+        }
+      ]
+    },
+    "skc-server-hw-sys-list-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/skcServerHwSysList/SkcServerHwSysListWebPart.js",
+          "manifest": "./src/webparts/skcServerHwSysList/SkcServerHwSysListWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SkcServerHwFrmWebPartStrings": "lib/webparts/skcServerHwFrm/loc/{locale}.js",
+    "SkcServerHwSysListWebPartStrings": "lib/webparts/skcServerHwSysList/loc/{locale}.js"
+  }
+}
